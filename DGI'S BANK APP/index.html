@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christosin'sPay</title>
+   <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    
+    <nav class="main-nav">
+        <div class="welcome">
+            <span class="label-welcome"> Log in to get started </span>
+        </div>
+
+        
+
+        <div class="accounts-dropdown">
+            <button class="dropdown-btn" id="dropdownBtn">📋 Accounts</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-content">
+                    <!-- Accounts will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="login-form">
+            <input name="username" class="login-input login-input-username" type="text" placeholder="Username"/>
+            <input name="password" class="login-input login-input-pin" maxlength="4" placeholder="Password" />
+            <button class="btn__login">&rarr;</button>
+        </form>
+    </nav>
+
+    <main class="main no-visible">
+        <div class="balance">
+            <p class="balance-text">Current balance</p>
+            <h3 class="balance-total">₦000,000</h3>
+        </div>
+
+        <div class="container">
+            <div class="container-movements">
+                <div class="movements-row">
+                    <div class="movements-type movement-type--deposit">8 Deposit</div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+
+                <div class="movements-row">
+                    <div class="movements-type movement-type--withdrawal">
+                        7 Withdrawal
+                    </div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+
+                <div class="movements-row">
+                    <div class="movements-type movement-type--deposit">6 Deposit</div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+
+                <div class="movements-row">
+                    <div class="movements-type movement-type--deposit">8 Deposit</div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+                <div class="movements-row">
+                    <div class="movements-type movement-type--withdrawal">
+                        7 Withdrawal
+                    </div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+
+                <div class="movements-row">
+                    <div class="movements-type movement-type--withdrawal">
+                        7 Withdrawal
+                    </div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+
+                <div class="movements-row">
+                    <div class="movements-type movement-type--withdrawal">
+                        7 Withdrawal
+                    </div>
+                    <div class="movements-value">₦10000</div>
+                </div>
+            </div>
+
+            <div class="container-operation">
+                <div class="container-operation-box container-operation-box--transfer">
+                    <p class="operation-heading">Transfer Money</p>
+
+                    <form class="input-operation operation-form" action="">
+                        <div class="input-box">
+                            <input class="input-operation input_transfer-user" type="text" name="transfer--recipient" />
+                            <label for="">Transfer To</label>
+                        </div>
+
+                        <div class="input-box">
+                            <input class="input-operation input_transfer-amount" type="number" />
+                            <label for="">Amount</label>
+                        </div>
+
+                        <button class="operation-btn btn-transfer">&rarr;</button>
+                    </form>
+                </div>
+
+                <div class="container-operation-box container-operation-box--loan">
+                    <p class="operation-heading">Request a Loan</p>
+
+                    <form class="input-operation operation-form" action="">
+                        <!-- <div class="input-box">
+                <input
+                  class="input-operation input_transfer-user"
+                  type="text"
+                  name="transfer--recipient"
+                />
+                <label for="">Transfer To</label>
+              </div> -->
+
+                        <div class="input-box">
+                            <input class="input-operation input_loan-amount" type="number" />
+                            <label for="">Amount</label>
+                        </div>
+
+                        <button class="operation-btn btn-loan">&rarr;</button>
+                    </form>
+                </div>
+
+                <div class="container-operation-box container-operation-box--close-account">
+                    <p class="operation-heading">Close Account</p>
+
+                    <form class="input-operation operation-form" action="">
+                        <div class="input-box">
+                            <input class="input-operation input_close-user" type="text" name="transfer--recipient" />
+                            <label for="">Username</label>
+                        </div>
+
+                        <div class="input-box">
+                            <input class="input-operation input_close-pin" type="number" />
+                            <label for="">Pin</label>
+                        </div>
+
+                        <button class="operation-btn btn-close">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="summary no-visible">
+        <div class="summary-box--wrapper">
+            <div class="summary-box">
+                <span class="summary-label">in</span>
+                <p class="summary-total summary-total--in">N000</p>
+            </div>
+            <div class="summary-box">
+                <span class="summary-label" box>out</span>
+                <p class="summary-total summary-total--out">N000</p>
+            </div>
+            <div class="summary-box">
+                <span class="summary-label">interest</span>
+                <p class="summary-total summary-total--interest">N000</p>
+            </div>
+        </div>
+
+        <div class="logout-box">
+            <span class="logout-label">Logout</span>
+            <button class="btn-logout">
+                <!-- <img src="img/Logout icon.svg" alt="" />&nbsp; -->
+            </button>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
